@@ -134,6 +134,16 @@
                     android:minHeight="40dp"
                     app:srcCompat="@drawable/repeat" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Rancid"
+                    android:textSize="30sp" />
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -164,7 +174,8 @@
                 android:layout_weight="1"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:text="Next Track:" />
+                android:text="Next Track:"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"

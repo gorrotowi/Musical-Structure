@@ -133,6 +133,21 @@
                     android:minHeight="40dp"
                     app:srcCompat="@drawable/repeat" />
 
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:maxHeight="50dp"
+                    android:maxLines="2"
+                    android:maxWidth="250dp"
+                    android:minWidth="100dp"
+                    android:singleLine="true"
+                    android:text="Rancid"
+                    android:textSize="20sp"
+                    app:minTextSize="16sp" />
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -161,6 +176,7 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
+                android:gravity="center_vertical|end"
                 android:maxLines="1"
                 android:singleLine="true"
                 android:text="Next Track:" />
@@ -171,7 +187,8 @@
                 android:layout_weight="2"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:text="Death/White Lies" />
+                android:text="Death/White Lies"
+                android:textStyle="bold" />
 
         </LinearLayout>
 

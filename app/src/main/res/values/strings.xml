@@ -5,4 +5,9 @@
     <string name="play_pause_img">play pause img</string>
     <string name="next_img">next img</string>
     <string name="more">More</string>
+    <string name="artists">Artists</string>
+    <string name="albums">Albums</string>
+    <string name="songs">Songs</string>
+    <string name="playlist">PlayList:</string>
+    <string name="playlist_example_name">PlayList: Awesome Songs!</string>
 </resources>

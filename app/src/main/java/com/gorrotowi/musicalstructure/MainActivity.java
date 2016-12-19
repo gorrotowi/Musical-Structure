@@ -1,11 +1,11 @@
 package com.gorrotowi.musicalstructure;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        toolbar.setTitle("");
+        toolbar.setTitle("Now Playing");
         setSupportActionBar(toolbar);
 
     }
@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menuMore) {
-            Toast.makeText(this, "More Options", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "More Options", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(MainActivity.this, ListLibraryActivity.class));
+            overridePendingTransition(R.anim.slide_up, R.anim.stay);
         }
         return super.onOptionsItemSelected(item);
     }

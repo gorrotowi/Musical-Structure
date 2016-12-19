@@ -27,5 +27,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile 'me.grantland:autofittextview:0.2.1'
     testCompile 'junit:junit:4.12'
 }
