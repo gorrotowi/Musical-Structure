@@ -1,15 +1,26 @@
 package com.gorrotowi.musicalstructure;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 public class ListLibraryActivity extends AppCompatActivity {
 
+    private static final String TAG = ListLibraryActivity.class.getSimpleName();
+
     ListView listView;
+    Button btnLibraryArtists;
+    Button btnLibraryAlbums;
+    Button btnLibrarySongs;
+
     ArrayAdapter<String> adapter;
 
     String[] dummySongsList = {
@@ -31,6 +42,9 @@ public class ListLibraryActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         listView = (ListView) findViewById(R.id.lvPlaylist);
+        btnLibraryArtists = (Button) findViewById(R.id.btnLibraryArtists);
+        btnLibraryAlbums = (Button) findViewById(R.id.btnLibraryAlbums);
+        btnLibrarySongs = (Button) findViewById(R.id.btnLibrarySongs);
 
         toolbar.setTitle("Library");
         setSupportActionBar(toolbar);
@@ -42,10 +56,37 @@ public class ListLibraryActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, getSongsList());
         listView.setAdapter(adapter);
 
+        btnLibraryArtists.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ListLibraryActivity.this, ListArtistActivity.class));
+            }
+        });
+
+        btnLibraryAlbums.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ListLibraryActivity.this, ListAlbumActivity.class));
+            }
+        });
+
+        btnLibrarySongs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ListLibraryActivity.this, ListSongActivity.class));
+            }
+        });
+
     }
 
     private String[] getSongsList() {
         return dummySongsList;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_library, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -54,6 +95,9 @@ public class ListLibraryActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 onBackPressed();
+                break;
+            case R.id.menuSearch:
+                Log.i(TAG, "onOptionsItemSelected: Go to SearchView");
                 break;
         }
 

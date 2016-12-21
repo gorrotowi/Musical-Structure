@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgItemArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:maxHeight="150dp"
+        android:transitionName="@string/transitionImgArtist"
+        android:minHeight="100dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/placebotop" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/txtItemArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2"
+        android:maxWidth="120dp"
+        android:singleLine="true"
+        android:textSize="24sp"
+        app:minTextSize="16sp"
+        tools:text="System Of A Down" />
+
+</LinearLayout>

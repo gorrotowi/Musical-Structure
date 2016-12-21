@@ -10,4 +10,12 @@
     <string name="songs">Songs</string>
     <string name="playlist">PlayList:</string>
     <string name="playlist_example_name">PlayList: Awesome Songs!</string>
+    <string name="search">Search</string>
+    <string name="lorem_ipsum">A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don\'t know who you\'re talking to, so let me clue you in. I am not in danger, Skyler. I AM the danger! A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!</string>
+    <string name="img_like">img like</string>
+    <string name="followers">Followers</string>
+    <string name="numberFollowers">132K</string>
+    <string name="img_item_album">img album item</string>
+    <string name="transitionImgArtist">imgArtist</string>
+    <string name="img_artist_detail_header">img artist detail header</string>
 </resources>

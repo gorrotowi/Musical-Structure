@@ -4,7 +4,6 @@
     android:id="@+id/activity_list_library"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_library"
     android:orientation="vertical"
     tools:context="com.gorrotowi.musicalstructure.ListLibraryActivity">
 
@@ -12,14 +11,15 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp" />
+        android:fitsSystemWindows="true" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
+        <Button
+            android:id="@+id/btnLibraryArtists"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
@@ -30,12 +30,14 @@
             android:drawableLeft="@drawable/account_multiple"
             android:drawablePadding="32dp"
             android:drawableStart="@drawable/account_multiple"
+            android:gravity="center_vertical|start"
             android:padding="@dimen/activity_horizontal_margin"
             android:text="@string/artists"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="18sp" />
 
-        <TextView
+        <Button
+            android:id="@+id/btnLibraryAlbums"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
@@ -46,12 +48,14 @@
             android:drawableLeft="@drawable/view_grid"
             android:drawablePadding="32dp"
             android:drawableStart="@drawable/view_grid"
+            android:gravity="center_vertical|start"
             android:padding="@dimen/activity_horizontal_margin"
             android:text="@string/albums"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="18sp" />
 
-        <TextView
+        <Button
+            android:id="@+id/btnLibrarySongs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
@@ -62,6 +66,7 @@
             android:drawableLeft="@drawable/album"
             android:drawablePadding="32dp"
             android:drawableStart="@drawable/album"
+            android:gravity="center_vertical|start"
             android:padding="@dimen/activity_horizontal_margin"
             android:text="@string/songs"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"

@@ -15,7 +15,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListLibraryActivity"></activity>
+        <activity
+            android:name=".ListLibraryActivity"
+            android:theme="@style/AppThemeLibrary" />
+        <activity
+            android:name=".ListArtistActivity"
+            android:theme="@style/AppThemeArtist" />
+        <activity
+            android:name=".ListAlbumActivity"
+            android:theme="@style/AppThemeAlbums" />
+        <activity
+            android:name=".ListSongActivity"
+            android:theme="@style/AppThemeSongs" />
+        <activity
+            android:name=".ArtistDetailActivity"
+            android:theme="@style/AppThemeArtist" />
     </application>
 
 </manifest>

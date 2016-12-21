@@ -6,7 +6,36 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowContentTransitions">true</item>
         <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="AppThemeDetail" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppThemeLibrary" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_library</item>
+    </style>
+
+    <style name="AppThemeArtist" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_artists</item>
+    </style>
+
+    <style name="AppThemeAlbums" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_albums</item>
+    </style>
+
+    <style name="AppThemeSongs" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_songs</item>
     </style>
 
 </resources>
