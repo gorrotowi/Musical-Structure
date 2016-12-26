@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar.setTitle("Now Playing");
         setSupportActionBar(toolbar);
-
     }
 
     @Override

@@ -18,4 +18,12 @@
     <string name="img_item_album">img album item</string>
     <string name="transitionImgArtist">imgArtist</string>
     <string name="img_artist_detail_header">img artist detail header</string>
+    <string name="artist_detail_explain">in this activity you can see information of an artist like it name, a biography and albums from it, also you can \"follow\" this artist and add in favorites, I gona get all the information from lastfm and musixmatch API</string>
+    <string name="album_list_explain">In this activity you can see all your saved albums. Using realm I will get the saved information of each album obtained by the musixmatch and lastfm API</string>
+    <string name="artist_list_explain">In this activity you can see all your saved \"follow\" artists</string>
+    <string name="songs_list_explain">In this activity you can see all your saved songs</string>
+    <string name="library_list_explain">In this activity you can see the current playlist and you can go to artist, albums or songs list, I'll use Realm to storage the name of playlist, songs and ID's of these</string>
+    <string name="player_explain">this view is for controlling the music player using MediaPlayer and Audio Player</string>
+    <string name="replay_button">Replay button</string>
+    <string name="suffle_button">suffle button</string>
 </resources>

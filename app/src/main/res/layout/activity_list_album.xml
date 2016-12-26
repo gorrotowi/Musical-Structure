@@ -13,6 +13,12 @@
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/album_list_explain" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rcAlbums"
         android:layout_width="match_parent"
